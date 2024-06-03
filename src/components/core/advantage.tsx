@@ -9,7 +9,7 @@ import { Bell, Star } from "react-feather";
 const Advantage = () => {
   return (
     <MainLayout>
-      <section className=" font-customFont bg-red-400 sm:bg-cyan-500 md:bg-teal-500 lg:bg-yellow-400 xl:bg-purple-500">
+      <section className="relative font-customFont ">
         {/* first section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 h-fit  items-center leading-6">
           <div className=" leading-6">
@@ -33,14 +33,16 @@ const Advantage = () => {
               eligendi maxime?
             </p>
           </div>
+          <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-1 top-[10%] left-[50%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
           <div>
-            <Image src={Pic} alt="" className="w-fit h-fit" />
+            <Image src={Pic} alt="" className="w-full h-full relative" />
           </div>
         </div>
         {/* second section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center">
+        <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center ">
+        <div className=" w-[250px] h-[300px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 transform rotate-45 rounded-full absolute z-1 top-[60%] left-[10%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
           <div>
-            <Image src={Pic1} alt="" className="w-fit h-fit" />
+            <Image src={Pic1} alt="" className="w-full h-full relative" />
           </div>
           <div>
           <h3 className="flex items-center gap-2 my-4 text-2xl font-bold">

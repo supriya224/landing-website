@@ -100,10 +100,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+     
         <hr className="border-gray-500 mt-8" />
         <div className="mt-8 text-xs text-gray-800 text-center">
           <p>&copy; 2022 Uifry.Com All Rights Reserved</p>
         </div>
+      </div>
+      <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-500 to-yellow-200 rounded-full absolute z-1 top-[50%] left-[50%] translate-x-[50%] translate-y-[50%] blur-[30px]">
       </div>
     </footer>
   );
