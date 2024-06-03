@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex items-center mt-4 text-sm text-gray-600">
               <Image src={Logo} alt="logo" width={40} height={40} />
@@ -26,32 +26,64 @@ const Footer = () => {
             <div>
               <p className="font-medium">Links</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a href="#" className="hover:opacity-75"> Home </a>
-                <a href="#" className="hover:opacity-75"> About Us </a>
-                <a href="#" className="hover:opacity-75"> Bookings</a>
-                <a href="#" className="hover:opacity-75"> Blog </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Home{" "}
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  About Us{" "}
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Bookings
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Blog{" "}
+                </a>
               </nav>
             </div>
             <div>
               <p className="font-medium">Legal</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a href="#" className="hover:opacity-75"> Terms of Use</a>
-                <a href="#" className="hover:opacity-75"> Privacy Policy </a>
-                <a href="#" className="hover:opacity-75"> Cookie Policy </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Terms of Use
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Privacy Policy{" "}
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Cookie Policy{" "}
+                </a>
               </nav>
             </div>
             <div>
               <p className="font-medium">Products</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a href="#" className="hover:opacity-75">Take Tour </a>
-                <a href="#" className="hover:opacity-75"> Live Chat </a>
-                <a href="#" className="hover:opacity-75"> Reviews </a>
+                <a href="#" className="hover:opacity-75">
+                  Take Tour{" "}
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Live Chat{" "}
+                </a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Reviews{" "}
+                </a>
               </nav>
             </div>
             <div>
               <p className="font-medium">Newsletter</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a href="#" className="hover:opacity-75"> Stay Up To Date</a>
+                <a href="#" className="hover:opacity-75">
+                  {" "}
+                  Stay Up To Date
+                </a>
                 <div className="flex mt-2">
                   <input
                     type="email"

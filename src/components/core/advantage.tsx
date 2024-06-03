@@ -9,9 +9,9 @@ import { Bell, Star } from "react-feather";
 const Advantage = () => {
   return (
     <MainLayout>
-      <section className=" font-customFont">
+      <section className=" font-customFont bg-red-400 sm:bg-cyan-500 md:bg-teal-500 lg:bg-yellow-400 xl:bg-purple-500">
         {/* first section */}
-        <div className="grid grid-cols-2 items-center leading-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 h-fit  items-center leading-6">
           <div className=" leading-6">
             <h3 className="text-red-500">ADVANTAGES</h3>
             <p className="text-5xl font-extrabold">Why choose Uifry?</p>
@@ -34,13 +34,13 @@ const Advantage = () => {
             </p>
           </div>
           <div>
-            <Image src={Pic} alt="" className="w-full h-full" />
+            <Image src={Pic} alt="" className="w-fit h-fit" />
           </div>
         </div>
         {/* second section */}
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center">
           <div>
-            <Image src={Pic1} alt="" className="w-full h-full" />
+            <Image src={Pic1} alt="" className="w-fit h-fit" />
           </div>
           <div>
           <h3 className="flex items-center gap-2 my-4 text-2xl font-bold">

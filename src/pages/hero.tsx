@@ -12,6 +12,7 @@ import IMG1 from "/public/assets/iphone1.png";
 import IMG2 from "/public/assets/iphone2.png";
 import Star from "/public/assets/pic4.png"
 import Pic from "/public/assets/pic3.png"
+import { ArrowRight, PlayCircle } from "react-feather";
 
 const Hero = () => {
   return (
@@ -26,9 +27,9 @@ const Hero = () => {
             enim doloribus neque recusandae. Aspernatur nostrum pariatur aliquam
             itaque, quaerat in labore!
           </p>
-          <div className="flex gap-12">
-            <button>Get Started</button>
-            <button>Watch Video</button>
+          <div className="flex gap-12 my-6">
+            <button className="bg-black flex text-white p-3">Get Started<ArrowRight/> </button>
+            <button className="flex justify-center items-center gap-3"> <PlayCircle/> Watch Video</button>
           </div>
          <Image src={Pic} alt="" className="mt-12" />
           </div>

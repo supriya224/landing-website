@@ -24,13 +24,13 @@ const Testimonial = () => {
 
   return (
     <MainLayout>
-      <section>
-        <h2>Testimonials</h2>
-        <p className="text-5xl font-bold">What Our users say about us</p>
-        <div className="grid grid-cols-2 w-full">
+      <section className="">
+        <h2 className="text-center text-xl">Testimonials</h2>
+        <p className="text-5xl font-bold text-center justify-center  mt-2 mb-8">What Our users say about us</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full px-12">
           <Image src={IMG} alt="" />
           <div>
-            <h3>The Best Financial Accounting App Ever!</h3>
+            <h3 className="text-3xl font-bold my-2 ">The Best Financial Accounting App Ever!</h3>
             <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
               blanditiis optio temporibus doloremque voluptatem, error voluptate
@@ -56,8 +56,8 @@ const Testimonial = () => {
               ))}
             </div>
             <div className="mt-4">
-              <h3>{selectedUser.name}</h3>
-              <p>{selectedUser.feedback}</p>
+              <h3 className="text-3xl font-bold">{selectedUser.name}</h3>
+              <p className="text-xl ">{selectedUser.feedback}</p>
             </div>
           </div>
           </div>
