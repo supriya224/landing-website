@@ -23,8 +23,8 @@ const Hero = () => {
             <h3 className="text-7xl relative z-10">
               Make the Best Financial Desicions
             </h3>
-            <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0 inset-0 top-[3%] left-[10%] translate-x-[100%] translate-y-[20%] blur-[30px]"></div>
-            <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-1 top-[30%] left-[50%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
+            <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[3%] left-[10%] translate-x-[100%] translate-y-[20%] blur-[70px]"></div>
+            {/* <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[30%] left-[50%] translate-x-[100%] translate-y-[20%] blur-[90px]"></div> */}
             <p className=" relative">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Excepturi iusto laboriosam facilis? Error, voluptas! Rem unde
@@ -75,7 +75,7 @@ const Hero = () => {
           <Testimonial />
           <Faq />
           <div className="relative z-10">
-            <div className=" w-[150px] h-[150px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0 top-[-30%] left-[-10%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
+            <div className=" w-[150px] h-[150px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0 top-[-30%] left-[-10%] translate-x-[50%] translate-y-[50%] blur-[50px]"></div>
             <Image src={Img} className="w-full h-full" alt="" />
           </div>
 
