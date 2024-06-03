@@ -5,7 +5,7 @@ import Logo from "/public/assets/Frame.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <footer className="">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -15,10 +15,10 @@ const Footer = () => {
             </div>
             <div className="mt-4">
               <h3 className="flex items-center">
-                <Mail className="mr-2" /> help@frybix.com
+                <Mail className="mr-2 text-red-500" /> help@frybix.com
               </h3>
               <h3 className="flex items-center mt-2">
-                <PhoneCall className="mr-2" /> +12242534546
+                <PhoneCall className="mr-2 text-red-500 " /> +12242534546
               </h3>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                     type="email"
                     name="email"
                     placeholder="Your email"
-                    className="bg-transparent outline-none border-none flex-grow p-2"
+                    className="bg-transparent w-12 outline-none border-none flex-grow p-2"
                     aria-label="Email"
                   />
                   <button type="button" className="bg-black text-white p-3">

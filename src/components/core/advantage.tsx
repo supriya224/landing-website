@@ -5,16 +5,17 @@ import Pic from "/public/assets/pic1.png";
 import Pic1 from "/public/assets/pic2.png";
 import { Bell, Star } from "react-feather";
 
+
 const Advantage = () => {
   return (
     <MainLayout>
-      <section className="bg-cyan-400 font-customFont">
+      <section className=" font-customFont">
         {/* first section */}
-        <div className="grid grid-cols-2 items-center bg-blue-600 leading-6">
+        <div className="grid grid-cols-2 items-center leading-6">
           <div className=" leading-6">
             <h3 className="text-red-500">ADVANTAGES</h3>
             <p className="text-5xl font-extrabold">Why choose Uifry?</p>
-            <h3 className="flex items-center gap-2 ">
+            <h3 className="flex items-center gap-2 my-4 text-2xl font-bold">
               <span className="w-9 h-9 flex items-center text-white text-center justify-center bg-red-500 rounded-full">
                 {" "}
                 <Bell />{" "}
@@ -42,7 +43,7 @@ const Advantage = () => {
             <Image src={Pic1} alt="" className="w-full h-full" />
           </div>
           <div>
-            <h3 className="flex items-center gap-2 ">
+          <h3 className="flex items-center gap-2 my-4 text-2xl font-bold">
               <span className="w-9 h-9 flex items-center text-white text-center justify-center bg-red-500 rounded-full">
                 {" "}
                 <Star />{" "}
