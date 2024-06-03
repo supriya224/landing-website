@@ -1,26 +1,26 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-// import Logo from "/public/assest/Frame.png";
 import { Menu, X } from "react-feather";
 import { useState } from "react";
 
 const styles = {
-  navLinks: "cursor-pointer ml-10 h-9 uppercase  text-md",
+  navLinks: "cursor-pointer ml-10 h-9 uppercase sm:text-sm flex items-center",
 };
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle the state correctly
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header className="">
-      <nav className="container mx-auto w-full font-customFont">
-        <div className="flex justify-between">
-          <div className="text-black hidden sm:flex">
-            {/* <Link href="/">
-              <Image src={Logo} alt="logo" width={30} height={30} />
-            </Link> */}
+      <nav className="container mx-auto font-customFont">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="flex" >
+              <Image src="/assets/Frame.png" alt="logo" className="w-fit h-fit" width={30} height={30} loading="lazy" />
+              <span>Uifry</span>
+            </div>
             <ul className="hidden sm:flex items-center justify-center">
               <li className={styles.navLinks}>
                 <Link href="/home">Home</Link>
@@ -38,28 +38,28 @@ function Header() {
           </div>
           <button className="hidden bg-black m-2 text-white p-2 sm:block">Download</button>
           {/* mobile menu */}
-          <div onClick={toggleMenu} className="sm:hidden cursor-pointer pl-24 text-black">
-            <Menu size={20} />
+          <div onClick={toggleMenu} className="sm:hidden cursor-pointer text-black">
+            {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </div>
         </div>
-        <div className={menuOpen ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-cyan-200 p-10 ease-in-out duration-300" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-200"}>
+        <div className={menuOpen ? "fixed top-0 left-0 w-[35%] sm:hidden h-screen bg-gray-200 p-10 ease-in-out duration-300" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-200"}>
           <div className="flex w-full items-center justify-end">
-            <div onClick={toggleMenu} className="cursor-pointer">
+            {/* <div onClick={toggleMenu} className="cursor-pointer">
               <X className="h-8 w-8" />
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col py-4">
-            <ul>
-              <li className={styles.navLinks} onClick={() => setMenuOpen(false)}>
+            <ul>  
+              <li className={styles.navLinks} onClick={toggleMenu}>
                 <Link href="/home">Home</Link>
               </li>
-              <li className={styles.navLinks} onClick={() => setMenuOpen(false)}>
+              <li className={styles.navLinks} onClick={toggleMenu}>
                 <Link href="/features">Features</Link>
               </li>
-              <li className={styles.navLinks} onClick={() => setMenuOpen(false)}>
+              <li className={styles.navLinks} onClick={toggleMenu}>
                 <Link href="/pricing">Pricing</Link>
               </li>
-              <li className={styles.navLinks} onClick={() => setMenuOpen(false)}>
+              <li className={styles.navLinks} onClick={toggleMenu}>
                 <Link href="/about">About</Link>
               </li>
               <button className="mt-4">Download</button>
@@ -72,6 +72,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
