@@ -11,7 +11,7 @@ import Image from 'next/image';
 const HomePage = () => {
   return (
     <MainLayout>
-        <section className='bg-purple-300 sm:bg-cyan-600 md:bg-lime-500 lg:bg-indigo-500 xl:text-teal-600 h-auto'>
+        <section className=''>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 relative ">
           <div className=" my-32">
             <h3 className="text-6xl relative z-10">

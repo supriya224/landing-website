@@ -14,18 +14,17 @@ import HomePage from "./home";
 const Hero = () => {
   return (
     <MainLayout>
-      <section className="mx-auto container font-customFont ">
+      <section className="mx-auto container font-customFont bg-purple-300 sm:bg-cyan-600 md:bg-lime-500 lg:bg-indigo-500 xl:text-teal-600 h-auto ">
         <HomePage/>
-          {/* <Feature />
+          <Feature />
           <Advantage />
           <Testimonial />
           <Faq />
-          <div className="">
-            <div className=" w-[150px] h-[150px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0 top-[-30%] left-[-10%] translate-x-[50%] translate-y-[50%] blur-[50px]"></div>
+          <div className="relative xl:relative lg:relative md:relative">
+            <div className=" w-[150px] h-[150px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0 top-[-80%] left-[-10%] lg:top-[-20%] lg:left-[-5%]  xl:top-[-20%] xl:left-[-5%] translate-x-[10%] translate-y-[50%] blur-[50px]"></div>
             <Image src={Img} className="w-full h-full" alt="" />
           </div>
-
-          <Footer /> */}
+          <Footer />
       </section>
     </MainLayout>
   );
