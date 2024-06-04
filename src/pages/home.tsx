@@ -38,33 +38,32 @@ const HomePage = () => {
                 <PlayCircle /> Watch Video
               </button>
             </div>
-            <Image src={Pic} alt="" className="w-full h-fit" />
+            <Image src={Pic} alt="" className="w-full h-fit" loading='lazy' />
           </div>
           <div className="hidden md:flex relative items-center ">
             
             <Image
               src={Star}
               alt=""
-            //   className="absolute top-1 left-10 w-[100%] h-[70%] transform z-10"
+              loading='lazy'
               className="absolute top-[-10%] lg:top-[-5%] sm:top-12 sm:left-10"
             />
             <Image
               src={IMG}
               alt=""
-            //   className="absolute top-56 left-56 w-[80%] h-fit transform rotate-0 z-10"
+              loading='lazy'
               className=" absolute top-24 left-24 sm:top-40 sm:left-40 md:top-32 md:left-32 lg:top-44 lg:left-44 xl:top-48 xl:left-48 w-[80%] "
             />
-            {/* md:w-[40%] md:top-56 md:left-96 */}
             <Image
               src={IMG2}
               alt=""
-            //   className="absolute top-40 left-40 w-[80%] h-fit transform rotate-0 z-20"
+              loading='lazy'
               className=" absolute top-12 left-16 sm:top-32 sm:left-32 md:top-24 md:left-24 lg:top-32 lg:left-32 xl:top-36 xl:left-36 w-[80%] "
             />
             <Image
               src={IMG1}
               alt=""
-            //    className="absolute top-3 w-[80%] h-fit transform rotate-[-120] z-30"
+              loading='lazy'
               className="absolute top-0 left-0 lg:top-0 lg:left-0 xl:top-0 xl:left-0  w-[80%] "
             />
           </div>

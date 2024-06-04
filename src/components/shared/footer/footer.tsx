@@ -10,7 +10,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex items-center mt-4 text-sm text-gray-600">
-              <Image src={Logo} alt="logo" width={40} height={40} />
+              <Image
+                src={Logo}
+                alt="logo"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
               <h3 className="text-3xl ml-2">Uifry</h3>
             </div>
             <div className="mt-4">
@@ -100,13 +106,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-     
+
         <hr className="border-gray-500 mt-8" />
         <div className="mt-8 text-xs text-gray-800 text-center">
           <p>&copy; 2022 Uifry.Com All Rights Reserved</p>
         </div>
       </div>
-    
     </footer>
   );
 };
