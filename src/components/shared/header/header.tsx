@@ -15,8 +15,8 @@ function Header() {
   return (
     <header className="">
       <nav className="container mx-auto font-customFont text-xl">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
+        <div className="flex justify-between items-center my-6">
+          <div className="flex items-center ">
             <div className="flex items-center" >
               <Image src="/assets/Frame.png" alt="logo" className="w-9 h-9" width={40} height={40} loading="lazy" />
               <span>Uifry</span>
