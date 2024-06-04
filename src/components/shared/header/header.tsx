@@ -5,7 +5,7 @@ import { Menu, X } from "react-feather";
 import { useState } from "react";
 
 const styles = {
-  navLinks: "cursor-pointer ml-10 h-9 uppercase sm:text-sm flex items-center",
+  navLinks: "cursor-pointer ml-10 h-9 uppercase text-sm sm:text-xl flex items-center",
 };
 
 function Header() {
@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <header className="">
-      <nav className="container mx-auto font-customFont">
+      <nav className="container mx-auto font-customFont text-xl">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="flex" >
-              <Image src="/assets/Frame.png" alt="logo" className="w-fit h-fit" width={30} height={30} loading="lazy" />
+            <div className="flex items-center" >
+              <Image src="/assets/Frame.png" alt="logo" className="w-9 h-9" width={40} height={40} loading="lazy" />
               <span>Uifry</span>
             </div>
             <ul className="hidden sm:flex items-center justify-center">
@@ -39,10 +39,10 @@ function Header() {
           <button className="hidden bg-black m-2 text-white p-2 sm:block">Download</button>
           {/* mobile menu */}
           <div onClick={toggleMenu} className="sm:hidden cursor-pointer text-black">
-            {menuOpen ? <X size={20} /> : <Menu size={20} />}
+            {menuOpen ? <X size={20} className="fixed" /> : <Menu size={20} />}
           </div>
         </div>
-        <div className={menuOpen ? "fixed top-0 left-0 w-[35%] sm:hidden h-screen bg-gray-200 p-10 ease-in-out duration-300" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-200"}>
+        <div className={menuOpen ? "fixed top-0 left-0 w-[40%] sm:hidden h-screen bg-gray-200 p-10 ease-in-out duration-300" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-200"}>
           <div className="flex w-full items-center justify-end">
             {/* <div onClick={toggleMenu} className="cursor-pointer">
               <X className="h-8 w-8" />
@@ -62,7 +62,7 @@ function Header() {
               <li className={styles.navLinks} onClick={toggleMenu}>
                 <Link href="/about">About</Link>
               </li>
-              <button className="mt-4">Download</button>
+              <button className="px:12 text-sm">Download</button>
             </ul>
           </div>
         </div>
