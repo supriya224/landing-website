@@ -11,7 +11,7 @@ import Image from 'next/image';
 const HomePage = () => {
   return (
     <MainLayout>
-        <section className='w-auto h-fit bg-red-400'>
+        <section className='w-auto h-fit '>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 relative ">
           <div className=" my-32">
             <h3 className="text-6xl relative z-10">
@@ -21,7 +21,7 @@ const HomePage = () => {
 
             </div>
 
-            <div className=" w-[250px] h-[250px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[110%] left-[-80%] sm:top-[130%] sm:left-[-30%] md:top-[20%] md:left-[20%] lg:top-[30%] lg:left-[30%] translate-x-[100%] translate-y-[20%] blur-[70px]"></div>
+            <div className="hidden w-[250px] h-[250px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[110%] left-[-80%] sm:top-[130%] sm:left-[-30%] md:top-[20%] md:left-[20%] lg:top-[30%] lg:left-[30%] translate-x-[100%] translate-y-[20%] blur-[70px]"></div>
             <p className=" relative">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Excepturi iusto laboriosam facilis? Error, voluptas! Rem unde

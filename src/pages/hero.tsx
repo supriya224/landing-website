@@ -14,7 +14,7 @@ import HomePage from "./home";
 const Hero = () => {
   return (
     <MainLayout>
-      <section className="mx-auto container font-customFont bg-purple-300 sm:bg-cyan-600 md:bg-lime-500 lg:bg-indigo-500 xl:text-teal-600 h-auto ">
+      <section className="mx-auto container font-customFont bg-purple-300 sm:bg-cyan-600 md:bg-lime-500 lg:bg-indigo-300 xl:text-teal-600 h-auto ">
         <HomePage/>
           <Feature />
           {/* <Advantage />
