@@ -11,7 +11,7 @@ import Image from 'next/image';
 const HomePage = () => {
   return (
     <MainLayout>
-        <section className=''>
+        <section className='w-auto h-fit bg-red-400'>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 relative ">
           <div className=" my-32">
             <h3 className="text-6xl relative z-10">
@@ -38,9 +38,10 @@ const HomePage = () => {
                 <PlayCircle /> Watch Video
               </button>
             </div>
-            <Image src={Pic} alt="" className="" />
+            <Image src={Pic} alt="" className="w-full h-fit" />
           </div>
-          <div className="h-fit relative items-center ">
+          <div className="hidden md:flex relative items-center ">
+            
             <Image
               src={Star}
               alt=""
