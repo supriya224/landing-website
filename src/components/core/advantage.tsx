@@ -33,14 +33,14 @@ const Advantage = () => {
               eligendi maxime?
             </p>
           </div>
-          {/* <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-1 top-[10%] left-[50%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div> */}
+          <div className=" w-[250px] h-[250px]  bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-1  top-[30%] left-[-30%] md:top-[5%] md:left-[40%] lg:top-[10%] lg:left-[50%] xl:top-[10%] xl:left-[50%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
           <div>
             <Image src={Pic} alt="" className="w-full h-full relative" />
           </div>
         </div>
         {/* second section */}
         <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center ">
-        {/* <div className=" w-[250px] h-[300px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 transform rotate-45 rounded-full absolute z-1 top-[60%] left-[10%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div> */}
+        <div className=" w-[250px] h-[300px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 transform rotate-45 rounded-full absolute z-1 top-[45%] left-[-30%] sm:top-[55%] sm:left-[10%] md:top-[40%] md:left-[-9%] lg:top-[50%] lg:left-[2%] xl:top-[60%] xl:left-[10%] translate-x-[50%] translate-y-[50%] blur-[30px]"></div>
           <div>
             <Image src={Pic1} alt="" className="w-full h-full relative" />
           </div>

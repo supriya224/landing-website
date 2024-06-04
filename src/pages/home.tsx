@@ -21,7 +21,7 @@ const HomePage = () => {
 
             </div>
 
-            <div className="hidden w-[250px] h-[250px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[110%] left-[-80%] sm:top-[130%] sm:left-[-30%] md:top-[20%] md:left-[20%] lg:top-[30%] lg:left-[30%] translate-x-[100%] translate-y-[20%] blur-[70px]"></div>
+            <div className="hidden w-[250px] h-[250px] bg-gradient-to-b xl:flex from-red-500 via-orange-400 to-yellow-200 rounded-full absolute z-0  top-[110%] left-[-80%] sm:top-[130%] sm:left-[-30%] md:top-[20%] md:left-[20%] lg:top-[30%] lg:left-[30%] translate-x-[100%] translate-y-[20%] blur-[70px]"></div>
             <p className=" relative">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Excepturi iusto laboriosam facilis? Error, voluptas! Rem unde
